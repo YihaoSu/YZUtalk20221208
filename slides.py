@@ -24,12 +24,12 @@ if topic == '選擇要分享的內容':
 		with col:
 			qr = qrcode.QRCode()
 			qr.add_data(
-				data='https://www.facebook.com/groups/1022708484514663'
+				data='https://hackmd.io/D1cCtPqYQ3KYMKKnVd4fWg'
 			)
 			qr_img = qr.make_image(fill='black', back_color='white')
-			qr_img.save('./qrcode.png')
-			st.subheader('「Python在天文領域的應用」FB社團')
-			st.image('./qrcode.png')
+			qr_img.save('./qrcode_notes.png')
+			st.subheader('這堂課的共筆')
+			st.image('./qrcode_notes.png')
 
 if topic == '為何改用Python進行研究工作？':
 	st.header('為何改用Python進行研究工作？')
@@ -116,5 +116,11 @@ if topic == '揪團用Python拉近群眾與星空的距離':
 		_, col, _ = st.columns(3)
 		with col:
 			st.subheader('謝謝大家！')
+			qr = qrcode.QRCode()
+			qr.add_data(
+				data='https://www.facebook.com/groups/1022708484514663'
+			)
+			qr_img = qr.make_image(fill='black', back_color='white')
+			qr_img.save('./qrcode_python_group.png')
 			st.subheader('「Python在天文領域的應用」FB社團')
-			st.image('./qrcode.png')
+			st.image('./qrcode_python_group.png')
