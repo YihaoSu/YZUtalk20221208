@@ -112,6 +112,12 @@ if topic == '如何藉由Python與天文維持關係？':
 		st.markdown('* 演講錄影：')
 		st.video('https://www.youtube.com/watch?v=n0PdS7cehZM')
 
+	with st.expander('PyCon APAC 2022'):
+		st.subheader('鄉民如何用Python協作貢獻天文教育')
+		st.markdown('* [簡報](https://hackmd.io/@astrobackhacker/BJ4XYe4jq)')
+		st.markdown('* 演講錄影：')
+		st.video('https://www.youtube.com/watch?v=2FGwasV6Nrg')
+
 if topic == '揪團用Python拉近群眾與星空的距離':
 	st.header('揪團用Python拉近群眾與星空的距離')
 	st.subheader('[g0v零時小學校](https://sch001.g0v.tw/) 2021-22 Demo Day的提案：「[鄉民都來開拓公民天文學家的地圖[0]：從互動式開源教材開始](https://sch001.g0v.tw/dash/prj/2Sk_LR05YD05j20AmR02l9dxC)」')
