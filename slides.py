@@ -73,12 +73,12 @@ if topic == '可以用Python解決哪些問題？':
 		st.markdown('* 相關Python套件： [Django](https://www.djangoproject.com/)、[Django REST framework](https://www.django-rest-framework.org/)、[Flask](https://flask.palletsprojects.com/en/2.0.x/)、[FastAPI](https://fastapi.tiangolo.com/)')
 
 	with st.expander('資料分析及視覺化'):
-		st.markdown('* 分析IoT資料找出空氣汙染事件')
+		st.markdown('* 分析IoT資料找出空氣、噪音、水質汙染事件')
 		st.markdown('* 相關Python套件： [Pandas](https://pandas.pydata.org/)、[GeoPandas](https://geopandas.org/en/stable/)、[Plotly](https://plotly.com/python/)、[Streamlit](https://streamlit.io/)')
 
 	with st.expander('更多應用'):
-		st.markdown('* 自動寄發Email及Line通知、自動讀寫Google Sheets和Drive上的檔案資料、...')
-		st.markdown('* 歡迎參加[台灣Python年會](https://tw.pycon.org/2021/zh-hant)')
+		st.markdown('* 自動寄發Email及Line通知、自動讀寫Google Sheets([gspread](https://docs.gspread.org/en/v5.7.0/))和Drive([PyDrive2](https://docs.iterative.ai/PyDrive2/))上的檔案資料、...')
+		st.markdown('* 歡迎參加[台灣Python年會](https://tw.pycon.org/2022/zh-hant)')
 
 if topic == '如何藉由Python與天文維持關係？':
 	st.header('如何藉由Python與天文維持關係？')
