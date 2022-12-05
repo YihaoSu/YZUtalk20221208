@@ -3,7 +3,7 @@ import qrcode
 import graphviz as graphviz
 
 
-st.set_page_config(page_title='IANCU colloquium', layout='wide')
+st.set_page_config(page_title='2022-12-8元智大學Python課演講', layout='wide')
 topic = st.sidebar.selectbox(
 	'',
 	[
@@ -33,6 +33,10 @@ if topic == '選擇要分享的內容':
 
 if topic == '為何改用Python進行研究工作？':
 	st.header('為何改用Python進行研究工作？')
+	with st.expander('為何進行天文研究工作需要寫程式？'):
+		st.subheader('為何進行天文研究工作需要寫程式？')
+		st.text('天文研究是藉由分析觀測資料或電腦模擬以了解天文現象，所以需要寫程式下載觀測資料、過濾資料、分析資料、視覺化資料、數值模擬天文物理現象。')
+
 	with st.expander('我的程式語言經歷'):
 		st.subheader('我的程式語言經歷')
 		graph = graphviz.Digraph()
@@ -47,7 +51,7 @@ if topic == '為何改用Python進行研究工作？':
 		st.markdown('* 在國際天文會議及workshop耳聞Python')
 		st.markdown('* 修「電波天文學」時用來分析資料的軟體CASA需要用到Python')
 		st.markdown('* 看到[Why Astronomers Should Program in Python](http://bellm.org/blog/2011/05/27/why-astronomers-should-program-in-python/)這篇文章')
-		st.markdown('* 2015年暑假為了帶高能天文Lab新生，編寫教材「[Python 基本語法與科學計算套件的使用](https://github.com/Astrohackers-TW/IANCUPythonAdventure/wiki/Python-%E5%9F%BA%E6%9C%AC%E8%AA%9E%E6%B3%95%E8%88%87%E7%A7%91%E5%AD%B8%E8%A8%88%E7%AE%97%E5%A5%97%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8)」')
+		st.markdown('* 2015年暑假為了帶高能天文物理實驗室新生，編寫教材「[Python 基本語法與科學計算套件的使用](https://github.com/Astrohackers-TW/IANCUPythonAdventure/wiki/Python-%E5%9F%BA%E6%9C%AC%E8%AA%9E%E6%B3%95%E8%88%87%E7%A7%91%E5%AD%B8%E8%A8%88%E7%AE%97%E5%A5%97%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8)」')
 		st.markdown('* 2015年參與紐約天文黑客松[Astro Hack Week](http://astrohackweek.org/2020/)的小成就：[Python Wrapper for Hilbert–Huang Transform MATLAB Package](https://github.com/HHTpy/HHTpywrapper)')
 		st.markdown('* 基於開放科學精神，企圖將博班研究工作整理成[QPOpytracker](https://github.com/YihaoSu/QPOpytracker)')
 
