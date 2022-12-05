@@ -11,7 +11,7 @@ topic = st.sidebar.selectbox(
 		'為何改用Python進行研究工作？',
 		'可以用Python解決哪些問題？',
 		'如何藉由Python與天文維持關係？',
-		'揪團用Python拉近群眾與星空的距離'
+		'來場黑客松用Python解決你們的問題吧！'
 	]
 )
 
@@ -28,7 +28,7 @@ if topic == '選擇要分享的內容':
 			)
 			qr_img = qr.make_image(fill='black', back_color='white')
 			qr_img.save('./qrcode_notes.png')
-			st.subheader('這堂課的共筆')
+			st.subheader('[這堂課的共筆](https://hackmd.io/D1cCtPqYQ3KYMKKnVd4fWg)')
 			st.image('./qrcode_notes.png')
 
 if topic == '為何改用Python進行研究工作？':
@@ -53,6 +53,7 @@ if topic == '為何改用Python進行研究工作？':
 		st.markdown('* 看到[Why Astronomers Should Program in Python](http://bellm.org/blog/2011/05/27/why-astronomers-should-program-in-python/)這篇文章')
 		st.markdown('* 2015年暑假為了帶高能天文物理實驗室新生，編寫教材「[Python 基本語法與科學計算套件的使用](https://github.com/Astrohackers-TW/IANCUPythonAdventure/wiki/Python-%E5%9F%BA%E6%9C%AC%E8%AA%9E%E6%B3%95%E8%88%87%E7%A7%91%E5%AD%B8%E8%A8%88%E7%AE%97%E5%A5%97%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8)」')
 		st.markdown('* 2015年參與紐約天文黑客松[Astro Hack Week](http://astrohackweek.org/2020/)的小成就：[Python Wrapper for Hilbert–Huang Transform MATLAB Package](https://github.com/HHTpy/HHTpywrapper)')
+		st.markdown('* 2016年在中央天文所組織Python討論會 - [Python在天文領域的應用](https://www.facebook.com/groups/1022708484514663/)')
 		st.markdown('* 基於開放科學精神，企圖將博班研究工作整理成[QPOpytracker](https://github.com/YihaoSu/QPOpytracker)')
 
 if topic == '可以用Python解決哪些問題？':
@@ -118,19 +119,21 @@ if topic == '如何藉由Python與天文維持關係？':
 		st.markdown('* 演講錄影：')
 		st.video('https://www.youtube.com/watch?v=2FGwasV6Nrg')
 
-if topic == '揪團用Python拉近群眾與星空的距離':
-	st.header('揪團用Python拉近群眾與星空的距離')
-	st.subheader('[g0v零時小學校](https://sch001.g0v.tw/) 2021-22 Demo Day的提案：「[鄉民都來開拓公民天文學家的地圖[0]：從互動式開源教材開始](https://sch001.g0v.tw/dash/prj/2Sk_LR05YD05j20AmR02l9dxC)」')
+if topic == '來場黑客松用Python解決你們的問題吧！':
+	st.header('來場黑客松用Python解決你們的問題吧！')
 
-	if st.button('加入我們'):
-		_, col, _ = st.columns(3)
-		with col:
-			st.subheader('謝謝大家！')
+	if st.button('動手hack!'):
+		col1, col2 = st.columns(2)
+		with col1:
+			st.subheader('[這堂課的共筆](https://hackmd.io/D1cCtPqYQ3KYMKKnVd4fWg)')
+			st.image('./qrcode_notes.png')
+
+		with col2:
 			qr = qrcode.QRCode()
 			qr.add_data(
 				data='https://www.facebook.com/groups/1022708484514663'
 			)
 			qr_img = qr.make_image(fill='black', back_color='white')
 			qr_img.save('./qrcode_python_group.png')
-			st.subheader('「Python在天文領域的應用」FB社團')
+			st.subheader('[「Python在天文領域的應用」FB社團](https://www.facebook.com/groups/1022708484514663)')
 			st.image('./qrcode_python_group.png')
